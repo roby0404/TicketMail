@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="customer_ticket_configuration" translate="label" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="ticket_mail_notification" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Ticket Mail Notifications</label>
+                <field id="notification_enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Ticket Mail Notifications</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="notification_mail_template" translate="label" type="select" sortOrder="20" showInStore="1" showInWebsite="1" showInDefault="1">
+                    <label>Ticket Mail Notifications Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

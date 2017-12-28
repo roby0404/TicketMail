@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customer_ticket_configuration>
+           <ticket_mail_notification>
+               <notification_enable>1</notification_enable>
+               <notification_mail_template>new_ticket_mail</notification_mail_template>
+           </ticket_mail_notification>
+        </customer_ticket_configuration>
+    </default>
+</config>
