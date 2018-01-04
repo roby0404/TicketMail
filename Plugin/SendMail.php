@@ -128,8 +128,9 @@ class SendMail
                 $this->inlineTranslation->resume();
             }
 
-            return $result;
         }
+        $this->persistor->clear('ticket_id');
+        return $result;
     }
 
 }
