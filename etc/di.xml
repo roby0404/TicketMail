@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Inchoo\CustomerTicket\Controller\NewTicket\SaveTicket">
+    <type name="Inchoo\CustomerTicket\Controller\Ticket\SaveTicket">
         <plugin name="ticket_mail_plugin" type="Inchoo\TicketMail\Plugin\SendMail" disabled="false" sortOrder="100" />
     </type>
 

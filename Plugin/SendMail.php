@@ -91,7 +91,7 @@ class SendMail
         $this->configuration = $configuration;
     }
 
-    public function afterExecute($subject)
+    public function afterExecute($subject, $result)
     {
         if($this->configuration->isEnabled()) {
             $id = $this->persistor->get('ticket_id');
@@ -127,6 +127,8 @@ class SendMail
             } finally {
                 $this->inlineTranslation->resume();
             }
+
+            return $result;
         }
     }
 
